@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feelin' Slappy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img class="slapTarget" src="https://orig00.deviantart.net/4ae9/f/2013/252/e/3/e3adbe7d11fcac606c9a4e21668e7df0-d6lmi20.png">
+                <br />
+                <span>Name:<span id="name">--</span></span>
+                <span class="healthText">Health:<span id="health">--</span></span>
+                <span>Hits:<span id="hits">--</span></span>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer bg-info">
+        <div class="footer-copyright text-center">
+            <button class="btn btn-primary" onclick="slap()">Slap</button>
+            <button class="btn btn-primary" onclick="punch()">Punch</button>
+            <button class="btn btn-primary" onclick="kick()">Kick</button>
+        </div>
+    </footer>
+    <script src="game.js"></script>
+</body>
+</html>

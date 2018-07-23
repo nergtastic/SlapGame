@@ -1,18 +1,51 @@
-
+body {
+    background-image: url("./img/Ring.png");
+    background-repeat: no-repeat;
+    
+}
 
 .slapTarget {
-    width: 200px;
+    width: 35%;
     padding: 10px;
     border-radius: 15px;
-    margin: 100px;
+    margin: -135px 0px 50px;
 
-    border-style: solid;
-    border-width: 1px;
-    border-color: blue;
+    /*border-style: solid;
+    border-width: 10px;
+    border-color: blue;*/
 
 }
 
 .healthText {
     margin: 50px 0px 50px 0px;
     font-weight: 700;
+}
+
+.target-name {
+    font-family: 'Anton', sans-serif;
+    font-size: 80px;
+    margin: 15px 0px;
+}
+
+.health-bar{
+    height: 50px;
+    border-radius: 20px;
+    background-color: red;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+#attacks{
+    margin: 20px;
+    display: inline;
+}
+
+#items{
+    margin: 20px;
+    display: inline;
 }

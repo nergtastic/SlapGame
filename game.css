@@ -29,8 +29,7 @@ body {
 
 .health-bar{
     height: 50px;
-    border-radius: 20px;
-    background-color: red;
+    border-radius: 4px;
     margin-bottom: 15px;
     text-align: center;
 }

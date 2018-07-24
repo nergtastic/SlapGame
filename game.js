@@ -53,9 +53,9 @@ function slap(){
     if(boxer.health - (1 / (1 + mod)) > 0){
         boxer.health -= (1 / (1 + mod))
         boxer.hits++
-        document.getElementById("healthBar").width = boxer.health.toString() + '%'
-        document.getElementById("healthBar").innerText = boxer.health
-        console.log('boxer health is now: ' + boxer.health)
+        document.getElementById("healthBar").style.width = boxer.health.toString() + '%'
+        document.getElementById("healthBar").innerText = Math.round(boxer.health)
+        console.log('boxer health is now: ' + Math.round(boxer.health))
     } else {
         alert("Don't you think he's had enough?")
     }
@@ -69,8 +69,8 @@ function punch(){
     if(boxer.health - 5/(1 + mod) > 0){
         boxer.health -= 5/ (1 + mod)
         boxer.hits++
-        document.getElementById("healthBar").width = boxer.health.toString() + '%'
-        document.getElementById("healthBar").innerText = boxer.health
+        document.getElementById("healthBar").style.width = boxer.health.toString() + '%'
+        document.getElementById("healthBar").innerText = Math.round(boxer.health)
     } else {
         alert("Don't you think he's had enough?")
     }
@@ -84,8 +84,8 @@ function kick(){
     if(boxer.health - 10/ (1 + mod) > 0){
         boxer.health -= 10/ (1 + mod)
         boxer.hits++
-        document.getElementById("healthBar").width = boxer.health.toString() + '%'
-        document.getElementById("healthBar").innerText = boxer.health
+        document.getElementById("healthBar").style.width = boxer.health.toString() + '%'
+        document.getElementById("healthBar").innerText = Math.round(boxer.health)
     } else {
         alert("Don't you think he's had enough?")
     }
@@ -105,7 +105,7 @@ function update(){
     document.getElementById('slappee').src = './img/Boxer' + randomPicture + '.png'
 }
 
-document.getElementById("healthBar").width = '50%'
+document.getElementById("healthBar").width = Math.round(boxer.health.toString()) + '%'
 
 let animateBoxer = setInterval(function(){
     update()

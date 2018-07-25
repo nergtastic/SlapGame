@@ -11,7 +11,15 @@
 </head>
 <body>
     <div class="container-fluid">
-            <div class="col-md-12 col-centered text-center">
+        <div class="col-md-1 text-center side-left">
+            <h1>Health: </h1>
+            <p id="health-tally">100</p>
+        </div>
+        <div class="col-md-1 text-center side-right">
+            <h1>Hits: </h1>
+            <p id="hits-tally">0</p>
+        </div>
+            <div class="col-md-8 col-centered text-center">
                 <h1 class="target-name">Bart "Brimstone" Jackson</h1>
                 <div class="progress col-centered health-bar" style="width: 50%">
                     <div class="progress-bar health-bar text-center" role="progressbar" id="healthBar"  style="width:100%">
@@ -24,34 +32,19 @@
                     <button class="btn bg-white" onclick="kick()">Kick</button>
                 </div>
                 <div id="items" class="col-md-6 col-offset-3 btn-group">
-                    <button class="btn btn-black" onclick="giveShield()">Mouth Guard</button>
-                    <button class="btn btn-black" onclick="blockFace()">Face Block</button>
-                    <button class="btn btn-black" onclick="blockBody()">Body Block</button>
+                    <button class="btn btn-black" onclick="giveShield()" id="mouthGuard">Mouth Guard</button>
+                    <button class="btn btn-black" onclick="blockFace()" id="blockFace">Face Block</button>
+                    <button class="btn btn-black" onclick="blockBody()" id="blockBody">Body Block</button>
                 </div>
                 <br />
                 <img class="slapTarget" id="slappee" src="">
                 <br />
-                <span>Name: <span id="name">--</span></span>
+                <!-- <span>Name: <span id="name">--</span></span>
                 <span class="healthText">Health: <span id="health">--</span></span>
                 <span>Hits: <span id="hits">--</span></span>
-                <span>Modifiers: <span id="mods">--</span></span>
+                <span>Modifiers: <span id="mods">--</span></span> -->
             </div>
     </div>
-    <!-- <footer class="page-footer bg-info footer-buttons">
-        <div class="footer-copyright text-center">
-            <div id="attacks">
-                <button class="btn btn-primary" onclick="slap()">Slap</button>
-                <button class="btn btn-primary" onclick="punch()">Punch</button>
-                <button class="btn btn-primary" onclick="kick()">Kick</button>
-            </div>
-            <br />
-            <div id="items">
-                <button class="btn btn-primary" onclick="giveShield()">Chicken Wire Fence</button>
-                <button class="btn btn-primary" onclick="giveFeed()">Chicken Feed</button>
-                <button class="btn btn-primary" onclick="giveTalons()">Sharp Talons</button>
-            </div>
-        </div>
-    </footer> -->
     <script src="game.js"></script>
 </body>
 </html>

@@ -1,19 +1,16 @@
 body {
     background-image: url("./img/Ring.png");
     background-repeat: no-repeat;
-    
+    height: 1050px;
+    overflow: hidden;    
 }
 
 .slapTarget {
-    width: 35%;
+    width: 53%;
+    min-width: 500px;
     padding: 10px;
     border-radius: 15px;
     margin: -135px 0px 50px;
-
-    /*border-style: solid;
-    border-width: 10px;
-    border-color: blue;*/
-
 }
 
 .healthText {
@@ -39,6 +36,38 @@ body {
     margin: 0 auto;
 }
 
+.side-left{
+    float: left;
+    margin: 50px;
+    padding: 25px 10px;
+    display: inline;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 10px;
+}
+
+.side-right{
+    float: right;
+    margin: 50px;
+    padding: 25px 10px;
+    display: inline;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    border-radius: 10px;
+}
+
+#hits-tally{
+    font-family: 'Anton', sans-serif;
+    font-size: 45px;
+}
+
+#health-tally{
+    font-family: 'Anton', sans-serif;
+    font-size: 45px;
+}
+
 #attacks{
     margin: 20px;
     display: inline;
@@ -48,3 +77,4 @@ body {
     margin: 20px;
     display: inline;
 }
+

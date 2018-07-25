@@ -10,7 +10,7 @@ body {
     min-width: 500px;
     padding: 10px;
     border-radius: 15px;
-    margin: -135px 0px 50px;
+    margin: -160px 0px 50px;
 }
 
 .healthText {
@@ -78,3 +78,8 @@ body {
     display: inline;
 }
 
+#restart{
+    margin-top: 25px;
+    display: none;
+    z-index: 100;
+}

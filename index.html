@@ -27,9 +27,9 @@
                 </div>
                 <br />
                 <div id="attacks" class="col-md-6 col-offset-3 btn-group">
-                    <button class="btn bg-white" onclick="slap()">Slap</button>
-                    <button class="btn bg-white" onclick="punch()">Punch</button>
-                    <button class="btn bg-white" onclick="kick()">Kick</button>
+                    <button class="btn bg-white" onclick="slap()" id="slap">Slap</button>
+                    <button class="btn bg-white" onclick="punch()" id="punch">Punch</button>
+                    <button class="btn bg-white" onclick="kick()" id="kick">Kick</button>
                 </div>
                 <div id="items" class="col-md-6 col-offset-3 btn-group">
                     <button class="btn btn-black" onclick="giveShield()" id="mouthGuard">Mouth Guard</button>
@@ -37,12 +37,12 @@
                     <button class="btn btn-black" onclick="blockBody()" id="blockBody">Body Block</button>
                 </div>
                 <br />
+                <div class="col-md-1 col-centered">
+                    <button class="btn btn-primary" onclick="startOver()" id="restart">Fight Again?</button>
+                </div>
+                <br />
                 <img class="slapTarget" id="slappee" src="">
                 <br />
-                <!-- <span>Name: <span id="name">--</span></span>
-                <span class="healthText">Health: <span id="health">--</span></span>
-                <span>Hits: <span id="hits">--</span></span>
-                <span>Modifiers: <span id="mods">--</span></span> -->
             </div>
     </div>
     <script src="game.js"></script>

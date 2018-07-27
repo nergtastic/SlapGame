@@ -250,7 +250,6 @@ let animateBoxer = setInterval(function(){
         update()
     } else {
         document.getElementById("restart").style.display = 'block'
-        // document.getElementById("slappee").style.display = 'none'
         document.getElementById("mouthGuard").disabled = true
         document.getElementById("blockFace").disabled = true
         document.getElementById("blockBody").disabled = true

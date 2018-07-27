@@ -6,11 +6,12 @@ body {
 }
 
 .slapTarget {
-    width: 53%;
+    width: 55%;
     min-width: 500px;
     padding: 10px;
     border-radius: 15px;
     margin: -160px 0px 50px;
+    min-width: 550px;
 }
 
 .healthText {
@@ -20,7 +21,7 @@ body {
 
 .target-name {
     font-family: 'Anton', sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     margin: 15px 0px;
 }
 
@@ -45,6 +46,7 @@ body {
     border-width: 5px;
     border-color: white;
     border-radius: 10px;
+    min-width: 150px;
 }
 
 .side-right{
@@ -56,6 +58,7 @@ body {
     border-width: 5px;
     border-color: white;
     border-radius: 10px;
+    min-width: 150px;
 }
 
 #hits-tally{
